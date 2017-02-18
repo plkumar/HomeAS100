@@ -1,0 +1,21 @@
+{
+    "version": "0.1.0",
+    "configurations": [{
+        "name": "Launch Electron App",
+        "type": "node",
+        "program": "main.js", // important
+        "stopOnEntry": false,
+        "args": [],
+        "cwd": ".",
+        // next line is very important
+        "runtimeExecutable": "npm",
+        "runtimeArgs": [
+            "start"
+        ],
+        "address": "localhost",
+        // Port to attach to.
+        "port": 5858,
+        "env": {},
+        "sourceMaps": false
+    }]
+}

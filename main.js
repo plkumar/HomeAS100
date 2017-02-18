@@ -17,7 +17,7 @@ const Tray = electron.Tray
 let appIcon = null
 
 ipc.on('put-in-tray', function(event) {
-    const iconName = process.platform === 'win32' ? 'windows-icon.png' : 'icon-image-128.png'
+    const iconName = process.platform === 'win32' ? 'windows-icon.png' : 'icon-image-16.png'
     const iconPath = path.join(__dirname, iconName)
     appIcon = new Tray(iconPath)
     const contextMenu = Menu.buildFromTemplate([{
